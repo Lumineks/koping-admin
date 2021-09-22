@@ -1,11 +1,14 @@
 {
-    "parser": "babel-eslint",
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
     "parserOptions": {
     "sourceType": "module",
     "allowImportExportEverywhere": false,
-    "codeFrame": false
+    "codeFrame": false,
+    "project": "./tsconfig.json"
 },
-"extends": ["airbnb", "prettier"],
+"extends": ["airbnb", "airbnb-typescript", "prettier"],
+
 "env": {
     "browser": true,
     "jest": true
