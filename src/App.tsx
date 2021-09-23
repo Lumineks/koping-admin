@@ -4,17 +4,16 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
       <Container fluid>
-        <Row>
-          <Col>1 of 1</Col>
-        </Row>
+        <Header />
       </Container>
     </div>
   );
