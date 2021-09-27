@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import ProductAccordeon from '../../components/ProductAccordeon';
 import PageTitleForm from './forms/PageTitleForm';
+import PhoneLinkForm from './forms/PhoneLinkForm';
 import Product from './interfaces/Product';
 
 const Catalog = () => {
@@ -39,7 +40,10 @@ const Catalog = () => {
         <h2>Элементы страницы:</h2>
 
         <div className="my-4 w-75">
-          <PageTitleForm defaultValue="Значение по умолчанию" />
+          <PageTitleForm value="Значение по умолчанию" />
+        </div>
+        <div className="my-4 w-75">
+          <PhoneLinkForm value="Значение по умолчанию" />
         </div>
         <div className="my-4">
           <div className="row my-4">

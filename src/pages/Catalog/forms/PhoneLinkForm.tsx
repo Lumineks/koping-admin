@@ -2,25 +2,25 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import InputField from '../../../components/inputField';
 
-interface PageTitleFormProps {
+interface PhoneLinkProps {
   value: string;
 }
 
-const PageTitleForm = ({value}: PageTitleFormProps) => {
-  const [pageTitle, setPageTitle] = useState('');
+const PhoneLinkForm = ({value}: PhoneLinkProps) => {
+  const [link, setLink] = useState(value);
 
   const onFormSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    console.log(pageTitle);
+    console.log(link);
   };
 
   return (
     <form onSubmit={onFormSubmit}>
       <InputField
-        label="Заголовок страницы"
-        value={value}
+        label="Номер телефона"
+        value={link}
         onChange={(val) => {
-          setPageTitle(val);
+          setLink(val);
         }}
         isLarge
       />
@@ -31,4 +31,4 @@ const PageTitleForm = ({value}: PageTitleFormProps) => {
   );
 };
 
-export default PageTitleForm;
+export default PhoneLinkForm;
